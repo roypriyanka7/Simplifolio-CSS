@@ -1,0 +1,60 @@
+* {
+  --primaryColor : whitesmoke;
+  --secondaryColor : crimson;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.body{
+  background-color: black;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80 px;
+  margin: auto;
+}
+
+/* navbar styling */
+.navbar {
+  background: var(--secondaryColor);
+  position: fixed;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  color: var(--primaryColor);
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navbar .menu {
+  float: right;
+  margin: 20px;
+}
+
+.navbar .menu li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+.navbar .menu li a{
+  color: white;
+  padding: 10px;
+}
+
+a.active, .menu li a:hover {
+  background: rgb(156, 9, 9);
+  transition: 0.5s;
+}
