@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
   <title>Roy's Portfolio</title>
 
   <link rel="stylesheet" href="./css/styles.css">
@@ -9,6 +10,17 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./js/script.js"></script>
+
+  <!-------------- Font Awesome Link -------------->
+  <script src="https://kit.fontawesome.com/70d26ce26d.js" crossorigin="anonymous"></script>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
 </head>
 
 <body class="body">
@@ -37,10 +49,175 @@
         <div class="text3">And I'm a <span>Software Developer.</span></div>
       </div>
       <button class="explore" id="exploreBtn" onclick="redirectToGithub()">Explore</button>
+
+      <div class="social-icons">
+        <a><i id="fb" class="fa-brands fa-facebook-f"
+            onclick="window.open('https://www.linkedin.com/in/priyankaroy07/')"></i></a>
+        <a><i id="linkedin" class="fa-brands fa-linkedin-in"
+            onclick="window.open('https://www.linkedin.com/in/priyankaroy07/')"></i></a>
+        <a><i id="github" class="fa-brands fa-github" onclick="window.open('https://github.com/roypriyanka7')"></i></a>
+        <a><i id="youTube" class="fa-brands fa-youtube"
+            onclick="window.open('https://www.youtube.com/channel/UCaQ0YAk-x5tpYN3ntW-Y6dw')"></i></a>
+      </div>
+
     </div>
+
   </section>
-  <p style="color: white;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae molestiae iste soluta tenetur explicabo iusto tempora quas in minus, laudantium est itaque quaerat fugiat asperiores at, tempore atque eum provident nemo. Fugit, porro repellendus nostrum explicabo vel quibusdam quo quam asperiores voluptatibus suscipit adipisci aut modi ducimus necessitatibus quae pariatur cumque autem? Qui velit consequatur similique quasi error et laudantium, ipsa porro iure ea dignissimos? At in quis tempora accusamus excepturi necessitatibus. Ipsum aliquid eum rerum ut nesciunt voluptas atque voluptates quo? Eaque alias, atque rerum tempore quae repellendus modi, ipsa molestias iusto possimus repellat assumenda molestiae cupiditate iste natus?</p>
-    
+
+
+  <!-- About Section -->
+  <section class="about">
+
+    <div class="grid-container">
+
+      <div class="grid-child-picture">
+        <div class="about-img">
+          <img src="./images/about_pic.jpg" alt="Priyanka">
+        </div>
+      </div>
+
+      <div class="grid-child-text">
+        <div class="text-wrapper">
+          <h2>Priyanka Roy</h2>
+          <h4>A <span>Software Developer and Graphic Designer</span> based in Bangladesh currently.</h4>
+          <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern
+            websites, web services and online stores. My passion is to design as well as develop digital user
+            experiences through
+            the bold interface, meaningful interactions and useful applications.</p>
+          <div class="about-list">
+
+            <!-- List Item Start -->
+            <div class="list-item">
+              <label>Birthday</label>
+              <p>17th February 1998</p>
+            </div>
+            <!-- List Item End -->
+
+            <!-- List Item Start -->
+            <div class="list-item">
+              <label>E-mail</label>
+              <p>priyanka98@gmail.com</p>
+            </div>
+            <!-- List Item End -->
+
+            <!-- List Item Start -->
+            <div class="list-item">
+              <label>Age</label>
+              <p>24 Yr</p>
+            </div>
+            <!-- List Item End -->
+
+            <!-- List Item Start -->
+            <div class="list-item">
+              <label>Phone</label>
+              <p>(+880)- 17** *****8</p>
+            </div>
+            <!-- List Item End -->
+
+            <!-- List Item Start -->
+            <div class="list-item">
+              <label>Address</label>
+              <p>Sylhet, Bangladesh.</p>
+            </div>
+            <!-- List Item End -->
+
+            <!-- List Item Start -->
+            <div class="list-item">
+              <label>Status</label>
+              <p>Available</p>
+            </div>
+            <!-- List Item End -->
+          </div>
+
+          <a href="priyanka_roy.pdf" download="priyanka_roy">
+
+            <button class="cvButton">Download CV</a></button>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Skills Section -->
+
+  <div class="skill-div">
+
+    <section class="skills">
+
+      <h1 class="skills-heading">Skills <span class="skill-span">&</span> Tools</h1>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide"><img src="./images/1.png" alt="HTML">
+          </div>
+
+          <div class="swiper-slide"><img src="./images/2.png" alt="JAVA">
+          </div>
+
+          <div class="swiper-slide"><img src="./images/3.png" alt="PYTHON">
+          </div>
+
+          <div class="swiper-slide"><img src="./images/4.png" alt="SQL">
+          </div>
+
+          <div class="swiper-slide"><img src="./images/6.png" alt="ANDROID-STUDIO">
+          </div>
+
+          <div class="swiper-slide"><img src="./images/7.png" alt="IDEA">
+          </div>
+
+          <div class="swiper-slide"><img src="./images/8.png" alt="VS-CODE">
+          </div>
+
+          <div class="swiper-slide"><img src="./images/3.png" alt="PYTHON">
+          </div>
+
+          <div class="swiper-slide"><img src="./images/4.png" alt="SQL">
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- ------------ Swiper Scripting ------------  -->
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+  <!-- ------------ End Of Swiper Scripting ------------  -->
+
+
+
+
+
+
+
 
 </body>
 
