@@ -6,10 +6,13 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  color: whitesmoke;
 }
 
 .body{
   background-color: black;
+  height: 500vh;
+  overflow-x: hidden;
 }
 
 .max-width {
@@ -20,7 +23,7 @@
 
 /* navbar styling */
 .navbar {
-  background: black;
+  background: rgba(0, 0, 0, 0.8);
   position: fixed;
   width: 100%;
   padding: auto;
@@ -74,8 +77,8 @@ a.active, .menu li a:hover {
 .home {
   display: flex;
   background: url(../images/portfolio_1.png)  no-repeat center;
-  margin: 30px 0 0 0;
-  height: 100vh;
+  /* margin: 30px 0 0 0; */
+  height: 120vh;
   background-size: cover;
   color: black;
   min-height: 500px;
@@ -101,8 +104,9 @@ a.active, .menu li a:hover {
 }
 
 .home .content .text2:hover {
-  color: var(--primaryColor);
+  color: yellow;
   transition: all 0.8s ease;
+  cursor: pointer;
 }
 
 .home .content .text3 {
@@ -115,12 +119,20 @@ a.active, .menu li a:hover {
   font-weight: 500;
 }
 
+.home .content .text3 span:hover {
+  color: yellow;
+  font-weight: 500;
+  transition: all 0.8s ease;
+  cursor: pointer;
+}
+
 .explore {
   color: var(--primaryColor);
   background-color: rgb(195, 7, 44);
   border-radius: 15px;
-  margin: 12px 25px;
+  margin: 45px 25px;
   font-size: 30px;
+  box-shadow: 1px 2px rgba(255, 187, 0, 0.873);
   font-family: 'Times New Roman', Times, serif;
   padding: 10px;
 }
@@ -128,4 +140,186 @@ a.active, .menu li a:hover {
 .explore:hover {
   background-color: black;
   transition: 0.8s ease;
+  cursor: pointer;
 }
+
+#home .social-icons{
+  /* position: absolute;  */
+  margin-top: 100px;
+  margin-left: 60vw;
+  bottom: 1rem;
+  z-index: 2;
+}
+
+#home .social-icons a{
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  background-color: black;
+  border-radius: 50%;
+  line-height: 35px;
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s ease-in-out;
+  cursor: pointer;
+}
+
+#home .social-icons a i{
+  color: var(--primaryColor);
+}
+
+#home .social-icons a:hover{
+  transform: translateY(-20%);
+  background-color: var(--primaryColor);
+}
+
+#home .social-icons a:hover i{
+  color: black;
+}
+
+
+/* About styling */
+
+.about{
+  background: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 250px ;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 30px; */
+}
+
+.about-img{
+  text-align: left;
+  width: 26rem;
+}
+
+.about-img img{
+  width: 100%;
+  border: 10px solid rgba(255, 181, 166, 0.849);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+}
+
+.about .text-wrapper{
+  margin-top: 80px;
+  width: 35rem;
+  padding-left: 40px;
+}
+
+.about .text-wrapper h2{
+  font-size: 35px;
+  font-weight: 550;
+}
+
+.about .text-wrapper h4{
+  font-size: large;
+  margin-top: 15px;
+}
+
+.about .text-wrapper h4 span:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+.about .text-wrapper p{
+  margin: 20px 0;
+}
+
+.about .about-list{
+  margin: 10px 0;
+}
+
+.about .about-list .list-item{
+  display: inline-flex;
+  width: 16rem;
+  margin-bottom: 1rem;
+}
+
+.about .about-list .list-item label{
+  font-size: 15px;
+  font-weight: 700;
+  width: 90px;
+  border-right: 2px solid #c1c1c1;
+}
+
+.about .about-list .list-item p{
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.about .cvButton{
+  margin: 20px 0;
+  padding: 10px;
+  color: var(--primaryColor);
+  background-color: var(--secondaryColor);
+}
+
+/*  Skills Styling*/
+
+.skills {
+  background-color: #1d1d1d;
+  height: 20rem;
+  width: 90vw;
+  margin: 30px 70px;
+  display: flex;
+  align-items: center;
+}
+
+.skills-heading {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 30px 60px;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.skills .skill-span {
+  margin-left: 30px;
+}
+
+.skills .skill-span:hover {
+  margin-left: 30px;
+  color: yellow;
+  cursor: pointer;
+}
+
+
+.swiper {
+  width: 500;
+  height: 100px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+@media (min-width: 320px) {
+  .skills{
+    width: auto;
+  }
+}
+
+
