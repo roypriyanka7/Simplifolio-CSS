@@ -14,6 +14,7 @@
   <!-------------- Font Awesome Link -------------->
   <script src="https://kit.fontawesome.com/70d26ce26d.js" crossorigin="anonymous"></script>
 
+
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -29,8 +30,10 @@
 
   <nav class="navbar">
     <div class="max-width">
-      <div class="logo"><a href="#">Simplifo<span>lio.</span></a></div>
-      <ul class="menu">
+      <div class="logo"><a href="#">Simplifo<span>lio.</span></a>
+      </div>
+
+      <ul class="menu" id="menu">
         <li><a class="active" href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Skills</a></li>
@@ -66,7 +69,7 @@
 
 
   <!-- About Section -->
-  <section class="about">
+  <section class="about" id="about">
 
     <div class="grid-container">
 
@@ -103,7 +106,7 @@
             <!-- List Item Start -->
             <div class="list-item">
               <label>Age</label>
-              <p>24 Yr</p>
+              <p>24 Years</p>
             </div>
             <!-- List Item End -->
 
@@ -148,9 +151,14 @@
 
   <div class="skill-div">
 
-    <section class="skills">
+    <section class="skills" id="skills">
 
-      <h1 class="skills-heading">Skills <span class="skill-span">&</span> Tools</h1>
+      <div class="skills-text">
+        <h1 class="skills-h1">Skills</h1>
+        <h1 class="and">&</h1>
+        <h1 class="skills-h1">Tools</h1>
+      </div>
+      
 
       <!-- Swiper -->
       <div class="swiper mySwiper">
