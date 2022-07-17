@@ -1,7 +1,7 @@
 * {
   --primaryColor : whitesmoke;
   --secondaryColor : crimson;
-  margin: 0;
+  margin: 0 ;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
@@ -27,6 +27,10 @@
   position: fixed;
   width: 100%;
   padding: auto;
+
+  /* show the nav always  */
+  z-index: 3;       
+
   overflow: auto;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -71,6 +75,13 @@ a.active, .menu li a:hover {
   background: rgb(156, 9, 9);
   transition: 0.5s ease;
 }
+
+
+/* navbar small screen  */
+
+
+
+
 
 /* home styling */
 
@@ -270,33 +281,40 @@ a.active, .menu li a:hover {
   width: 90vw;
   margin: 30px 70px;
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
-.skills-heading {
+.skills-text {
   font-family: 'Times New Roman', Times, serif;
   padding: 30px 60px;
   font-size: 35px;
   font-weight: 500;
+  margin-top: 40px;
+  z-index: 2;
+  margin-right: 20px;
 }
 
-.skills .skill-span {
-  margin-left: 30px;
+.skills .skills-text .and {
+  margin-left: 35px;
 }
 
-.skills .skill-span:hover {
-  margin-left: 30px;
+.skills .skills-text .and:hover {
+  margin-left: 35px;
   color: yellow;
   cursor: pointer;
 }
 
 
 .swiper {
-  width: 500;
+  width: 300;
   height: 100px;
+  margin-top: -275px;
 }
 
 .swiper-slide {
+  margin-left: 20px;
+
   text-align: center;
   font-size: 18px;
   background: transparent;
@@ -318,8 +336,8 @@ a.active, .menu li a:hover {
 
 @media (min-width: 320px) {
   .skills{
-    width: auto;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
-
 
